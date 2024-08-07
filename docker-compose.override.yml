@@ -1,0 +1,16 @@
+version: '3'
+services:
+  scheduler:
+    image: dwteste_ebd3ad/airflow:latest
+    volumes:
+      - ./dbt:/usr/local/airflow/dbt
+  webserver:
+    image: dwteste_ebd3ad/airflow:latest
+    volumes:
+      - ./dbt:/usr/local/airflow/dbt
+  worker:
+    image: dwteste_ebd3ad/airflow:latest
+    volumes:
+      - ./dbt:/usr/local/airflow/dbt
+
+
